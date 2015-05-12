@@ -1,0 +1,21 @@
+#include<stdio.h>
+float Pn(int x,int n);
+int main()
+{
+  int n,x,m;
+	printf("ÊäÈëÀÕÈÃµÂ¶àÏîÊ½µÄ½×Êý£º");
+	scanf("%d",&n);
+	printf("\n");
+	printf("ÊäÈëxµÄÖµ£º");
+	scanf("%d",&x);
+	m=Pn(x,n);
+	printf("µ±x=%dÊ±£¬%d½×ÀÕÈÃµÂ¶àÏîÊ½µÄÖµÎª£º%d",x,n,m);	
+}
+float Pn(int x,int n)
+{
+	if(n==0) return 1;
+	if(n==1) return x;
+	if(n>=1) return ((2*n-1)*x-Pn((n-1),x)-(n-1)*Pn((n-2),x))/n;
+}
+
+ 
