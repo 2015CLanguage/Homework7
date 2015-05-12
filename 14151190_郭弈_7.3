@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<math.h>
+int a,i,j;
+int pnum(int i,int j); 
+int main()
+{
+	j=0;
+	printf("please input a integer\n");
+	scanf("%d",&a);
+	if(pnum(i,j)==0) printf("This is a integer");
+	if(pnum(i,j)!=0)printf("This isn't a integer"); 
+	return 0;
+}
+int pnum(int i,int j)
+{
+	for(i=2;i<a;i++)
+	{
+		if(a%i==0) j=1;break;
+	}
+	return j;
+}
