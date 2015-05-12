@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<string.h>
-char link(char a[], char b[],char c[])
+void link(char a[], char b[],char c[])
 {
 	strcat(a,b);
 }
