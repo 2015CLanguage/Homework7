@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<string.h>
+void f(char a[80],char b[80]);
+int main()
+{
+	char a[80],b[80];
+	printf("请输入两个字符串中的字符");
+	gets(a);
+    gets(b);
+	f(a,b);
+	return 0;
+}
+void f(char a[80],char b[80])
+{
+	printf("%s\n",strcat(a,b));
+}
