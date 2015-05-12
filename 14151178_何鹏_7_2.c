@@ -7,7 +7,7 @@ void main()
 	void fun3();
 	float a,b,c;
 	printf("请输入a,b,c:");
-	scanf("%d%d%d",&a,&b,&c);
+	scanf("%f%f%f",&a,&b,&c);
 	if(b*b-4*a*c>0)
 		fun1(a,b,c);
 	else if(b*b-4*a*c==0)
