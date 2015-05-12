@@ -17,7 +17,7 @@ void main()
 	{
 		printf("Please enter a number:");
 		scanf("%d",&num);
-		getchar('\n');
+		getchar();//中和一个回车换行
 		if(dis(num))
 			printf("%d不是素数\n",num);
 		else
