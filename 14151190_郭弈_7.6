@@ -1,0 +1,22 @@
+#include<stdio.h>
+void con(char s1[],char s2[],char s[]);
+int main()
+{
+	char s1[100],s2[100],s[100];
+	printf("input string1:");
+	scanf("%s",s1);
+	printf("input string2:");
+	scanf("%s",s2);
+	con(s1,s2,s);
+	printf("\nThe new string is:\n%s",s);
+  return 0;	
+}
+void con(char s1[],char s2[],char s[])
+{
+	int i,j;
+	for(i=0;s1[i]!='\0';i++)
+	    s[i]=s1[i];
+	for(j=0;s2[j]!='\0';j++)
+	    s[i+j]=s2[j];
+	s[i+j]='\0';
+}
