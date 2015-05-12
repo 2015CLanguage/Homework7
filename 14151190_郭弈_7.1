@@ -1,0 +1,33 @@
+#include<stdio.h>
+int hcf(int u,int v);
+int lcd(int u,int v,int h);
+int main()
+{
+    int u,v,h,l;
+    scanf("%d,%d",&u,&v);
+    h=hcf(u,v);
+    printf("最大公约数为：%d\n",h);
+    l=lcd(u,v,h);
+    printf("最小公倍数为：%d\n",h);
+    return 0;
+}
+int hcf(int u,int v)
+{
+    int t,r;
+    if(u>v)
+    {
+        t=u;
+	u=v;
+	v=t;
+    }
+    while(r=v%u!=0)
+    {
+	v=u;
+	u=r;
+    }
+    return(u);
+}
+int lcd(int u,int v,int h)
+{
+    return(u*v/h);
+}
