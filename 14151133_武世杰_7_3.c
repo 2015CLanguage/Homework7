@@ -5,7 +5,7 @@ int main()
 	int prime_number(int);
 	int n;
 	printf("请输入一个数：");
-	scanf_s("%d", &n);
+	scanf("%d", &n);
 	if (prime_number(n))
 		printf("%d是一个素数。\n", n);
 	else
