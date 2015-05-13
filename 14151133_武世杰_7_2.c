@@ -8,7 +8,7 @@ int main()
 	void s0(float, float);
 	float a, b, c;
 	printf("请输入a,b,c:");
-	scanf_s("%f,%f,%f", &a, &b, &c);
+	scanf("%f,%f,%f", &a, &b, &c);
 	printf("方程为：%5.2fx*x+%5.2fx+%5.2f=0\n", a, b, c);
 	Delta = b*b - 4 * a*c;
 	printf("结果是：\n");
