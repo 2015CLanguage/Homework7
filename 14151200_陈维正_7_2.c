@@ -22,7 +22,7 @@ double p,r1,r2;
 p=y*y-4*x*z;
 r1=(-y+sqrt(p))/(2*x);
 r2=(-y-sqrt(p))/(2*x);
-printf("%lf,%lf",r1,r2);
+printf("x1=%lf,x2=%lf",r1,r2);
 
 }
 
@@ -30,5 +30,5 @@ float g(double x,double y,double z)
 {
 double r;
 r=-y/2*x;
-printf("%lf",r);
+printf("x1=x2=%lf",r);
 }
