@@ -20,8 +20,8 @@ float f(double x,double y,double z)
 {
 double p,r1,r2;
 p=y*y-4*x*z;
-r1=(-y+pow(p,1/2))/(2*x);
-r2=(-y-pow(p,1/2))/(2*x);
+r1=(-y+sqrt(p))/(2*x);
+r2=(-y-sqrt(p))/(2*x);
 printf("%lf,%lf",r1,r2);
 
 }
