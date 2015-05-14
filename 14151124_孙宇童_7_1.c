@@ -27,3 +27,17 @@ int lcd(int x,int y);
 		b=(x*y)/hcf(x,y);
 		return b;
 	}
+int main(void)
+
+
+{
+	int m,n,a,b;
+	printf("请输入两个整数：\n");
+	scanf("%d%d",&m,&n);
+	a=hcf(m,n);
+	b=lcd(m,n);
+	printf("最大公约数为：%d",b);
+	printf("最小公倍数为为：%d",a);
+
+	return 0;
+}
