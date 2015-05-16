@@ -1,0 +1,23 @@
+# include <stdio.h>
+int main()
+{	
+	int con(char a[], char b[]);
+	char c[20], d[20], e[40];
+	printf("请输入字符串1：");
+	gets_s(c);
+	printf("请输入字符串2：");
+	gets_s(d);
+	e[40] = con(c, d);
+	return 0;
+}
+int con(char a[], char b[])
+{
+	char f[40];
+	int i, j;
+	for (i = 0; a[i] != '\0'; i++)
+		f[i] = a[i];
+	for (j = i; b[j - i] != '\0'; j++)
+		f[j] = b[j - i];;
+	f[i+j] = '\0';
+	printf("%s", &f);
+	return (f[40]
