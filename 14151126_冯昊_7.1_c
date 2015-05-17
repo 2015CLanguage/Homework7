@@ -1,0 +1,31 @@
+#include "stdio.h"
+int gongyue(int a,int b);
+void main()
+
+{
+		int gongyueshu(int,int);
+        int zuixiaogongbeishu(int,int,int);
+	    int a,b,g,z;
+	    printf("请输入两个整数，用逗号隔开\n");
+		scanf("%d,%d",&a,&b);
+		g=gongyueshu(a,b);
+		z=zuixiaogongbeishu(a,b,g);
+		printf("最大公约数为：%d\n最小公倍数为：%d\n",g,z);
+}
+int gongyueshu(int a,int b)
+{
+	int p,i;
+	if(a>b)
+		p=a;
+	else
+		p=b;
+	for(i=p;i>0;i--)
+		if((a%i==0)&&(b%i==0))
+			break;
+	return i;   //此函数最后返回值为最大公约数
+}
+
+int zuixiaogongbeishu(int a,int b, int g)
+{
+	return a*b/g;
+}
