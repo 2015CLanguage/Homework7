@@ -1,19 +1,19 @@
 #include<stdio.h>
 #include<math.h>
-int x0(int x,int y,int z);
-int x1(int x,int y,int z);
-int x2(int x,int y,int z);
-int x0(int x,int y,int z)
+void x0(int x,int y,int z);
+void x1(int x,int y,int z);
+void x2(int x,int y,int z);
+void x0(int x,int y,int z)
 {
 	printf("该方程无解.\n");
 }
-int x1(int x,int y,int z)
+void x1(int x,int y,int z)
 {
 	float m;
 	m=-y/(2*x);
 	printf("该方程有一个解，是x=%f.\n",m);
 }
-int x2(int x,int y,int z)
+void x2(int x,int y,int z)
 {
 	float m,n,t;
 	t=sqrt(y*y-4*x*z);
@@ -39,4 +39,5 @@ int main()
 	{
 		x2(a,b,c);
 	}
+    return 0;
 }
