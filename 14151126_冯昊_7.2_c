@@ -1,0 +1,46 @@
+#include<stdio.h>
+#include<math.h>
+float x1, x2, d;
+float a, b, c, p, q;
+void xiaoyuling(float a, float b);
+void dengyuling(float a, float b);
+void dayuling(float a, float b);
+void xiaoyuling(float a, float b)
+{
+	p = -b / (2 * a);
+	q = sqrt(-d) / (2 * a);
+	x1 = p + q;
+	x2 = p - q;
+}
+void dengyuling(float a, float b)
+{
+	x1 = x2 = (-b) / (2 * a);
+}
+void dayuling(float a, float b)
+{
+	x1 = (-b + sqrt(d)) / (2 * a);
+	x2 = (-b - sqrt(d)) / (2 * a);
+}
+int main()
+{
+
+	printf("请输入a,b,c:\n");
+	scanf("%f,%f,%f", &a, &b, &c);
+	d = b*b - 4 * a*c;
+	if (d<0)
+	{
+		xiaoyuling(a, b);
+		printf("x1=%f\nx2=%f\n", x1, x2);
+	}
+	else if (d = 0)
+	{
+		dengyuling(a, b);
+		printf("x1=%f\nx2=%f\n", x1, x2);
+	}
+	else
+	{
+		dayuling(a, b);
+		printf("x1=%f\nx2=%f\n", x1, x2);
+	}
+	return 0;
+}
